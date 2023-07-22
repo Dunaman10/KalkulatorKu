@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>KalkulatorKu</title>
+	<link rel="icon" href="img/icon-calculator.png">
+
+	<style>
+		* {
+			padding: 0;
+			margin: 0;
+		}
+
+		body {
+			font-family: Arial, Helvetica, sans-serif;
+			margin-top: 8rem;
+			text-align: center;
+			background-image: url('img/bg.jpg');
+			background-repeat: no-repeat;
+			background-position: center;
+			background-size: cover;
+			width: 100%;
+			height: 100%;
+			margin-bottom: 150px;
+		}
+
+		.kalkulator {
+			background-color: gray;
+			opacity: 90%;
+			width: 300px;
+			margin: auto;
+			border-radius: 10px;
+			padding: 10px;
+			box-shadow: 1px 1px 1px black;
+		}
+
+		h1 {
+			margin-bottom: 10px;
+		}
+
+		input {
+			padding: 12px;
+			border-radius: 5px;
+		}
+
+		button {
+			padding: 12px;
+			margin: 5px;
+			margin-top: 10px;
+			font-size: large;
+			border-radius: 5px;
+		}
+
+		button:hover {
+			background-color: gray;
+			cursor: pointer;
+		}
+	</style>
+
+</head>
+
+<body class="">
+
+	<div class="kalkulator">
+		<h1>KalkulatorKu</h1>
+		<input type="text" id="display" readonly>
+		<br>
+		<button onclick="toDisplay('7')">7</button>
+		<button onclick="toDisplay('8')">8</button>
+		<button onclick="toDisplay('9')">9</button>
+		<button onclick="toDisplay('+')">+</button>
+		<br>
+		<button onclick="toDisplay('4')">4</button>
+		<button onclick="toDisplay('5')">5</button>
+		<button onclick="toDisplay('6')">6</button>
+		<button onclick="toDisplay('-')">-</button>
+		<br>
+		<button onclick="toDisplay('1')">1</button>
+		<button onclick="toDisplay('2')">2</button>
+		<button onclick="toDisplay('3')">3</button>
+		<button onclick="toDisplay('*')">*</button>
+		<br>
+		<button onclick="toDisplay('0')">0</button>
+		<button onclick="toDisplay('%')">%</button>
+		<button onclick="result()">=</button>
+		<button onclick="toDisplay('/')">/</button>
+		<br>
+		<button onclick="deleteDisplay()">Hapus</button>
+	</div>
+
+	<script src="script.js"></script>
+</body>
+
+</html>
